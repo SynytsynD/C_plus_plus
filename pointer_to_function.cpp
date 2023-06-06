@@ -70,14 +70,15 @@ void sort_down(int *arr, int *size)
 
 void main()
 {
-	int size = 0;
 	int choose_sort = 0;
-	int* arr = new int[size];
-	srand(time(NULL));
-
-
+	int size = 0 ;
+	
 	cout << " input array size: ";
 	cin >> size;
+
+	int* arr = new int[size];
+
+	srand(time(NULL));
 
 	fillarr(arr, &size);
 	show_array(arr, &size);
@@ -98,4 +99,7 @@ void main()
 			show_array(arr, &size, sort_up);
 		break;
 	}
+	
+	delete []arr;
+	arr = nullptr;
 }
