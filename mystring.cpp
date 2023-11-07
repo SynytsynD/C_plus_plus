@@ -150,15 +150,16 @@ int main()
 {
 	mystring data("hello");
 	mystring data2(" world!");
+
+	cout << "concatenate string: ";
 	mystring res = data + data2;
+	cout << res << endl;
 
+	cout << endl <<"compare string: ";
 	bool resb = data != data2;
+	cout << resb << endl;
 
-	cout << endl << res << endl;
-
-	cout << "length: " << res.leng() << endl;
-
-	cout << endl << resb << endl;
+	cout << endl << "length of string: " << res.leng() << endl;
 
 	return 0;
 }
