@@ -149,15 +149,16 @@ std::istream& operator >> (std::istream& in, mystring &other)
 int main()
 {
 	mystring data("hello");
-	mystring data2("world!");
+	mystring data2(" world!");
 	mystring res = data + data2;
 
 	bool resb = data != data2;
-	cout << endl << data << endl;
-	cout << "\tlength: " << res.leng() << endl;
 
-	cin >> data;
-	cout << endl << data << endl;
+	cout << endl << res << endl;
+
+	cout << "length: " << res.leng() << endl;
+
+	cout << endl << resb << endl;
 
 	return 0;
 }
