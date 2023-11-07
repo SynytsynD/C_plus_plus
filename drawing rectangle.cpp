@@ -23,7 +23,7 @@ void main()
 			{
 				cout << "*";
 			}
-			else if (i > 1 || i < height - 2)
+			else if (i > 0 || i < height - 1)
 			{
 				if (j == 0)
 				{
